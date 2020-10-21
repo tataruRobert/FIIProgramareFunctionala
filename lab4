@@ -1,0 +1,16 @@
+data ArbNode a = Leaf
+				| Node a (ArbNode a ) (ArbNode a)
+
+
+dst :: (Int, Int) -> (Int, Int) -> Double
+dst p1 p2 = undefined
+
+
+data FourTuple a b c d = Fst a
+						| Snd b
+						| Trd c
+						| Frt d
+						| Empty
+						deriving show
+
+nth :: Int -> (a,b,c,d) -> FourTuple
